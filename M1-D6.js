@@ -63,16 +63,31 @@ me.pop()
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+let whoIsBigger = {}
+let number1= 24
+let number2= 55
+
+if(number1<number2){
+  number2
+}else{
+  number1
+}
+//i don't know how to include the variable whoIsBigger
+
+//console.log("the biggest number is: "whoIsBigger)
+
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
