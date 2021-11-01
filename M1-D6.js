@@ -86,8 +86,15 @@ if(number1<number2){
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
-*/
 
+
+let deleteOne = true
+let sentenceWhoLoseAWord= "Hello,im just a string"
+if(deleteOne){
+  delete.sentenceWhoLoseAWord.length[1] -1
+}
+//I know it dont works 
+*/
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
