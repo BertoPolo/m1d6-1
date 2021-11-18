@@ -47,13 +47,15 @@ console.log(me)
 /* EXERCISE F
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
-me.skills =  ["javascript","css","html"]
+me.skills =  ["javascript","css","html"];
 
+console.log(me)
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
-me.pop()
+ me.skills.pop()
 
+ console.log(me)
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
@@ -63,18 +65,16 @@ me.pop()
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
-let whoIsBigger = {}
-let number1= 24
-let number2= 55
 
-if(number1<number2){
-  number2
+
+const whoIsBigger = function(number1,number2){
+if (number1 < number2){
+  return number2;
 }else{
-  number1
+ return number1;
 }
-//i don't know how to include the variable whoIsBigger
+}
 
-//console.log("the biggest number is: "whoIsBigger)
 
 
 /* EXERCISE 3
