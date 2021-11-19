@@ -28,11 +28,14 @@ console.log(sum)
 */
 
 
+// in solutions : let random = Math.floor(Math.random() * 20);
+// on video solution : let random = Math.random() *20
+
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
 
-let me= {
+let me = {
   name: "Alberto",
   surname: "Polo",
   age: 30
@@ -41,7 +44,9 @@ let me= {
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
-delete me.age
+
+delete me.age;
+
 console.log(me)
 
 /* EXERCISE F
@@ -50,17 +55,19 @@ console.log(me)
 me.skills =  ["javascript","css","html"];
 
 console.log(me)
+
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
- me.skills.pop()
+ me.skills.pop();
 
  console.log(me)
+
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
-
+const dice = Math.floor(Math.random() * 6 + 1)
 
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
@@ -75,26 +82,30 @@ if (number1 < number2){
 }
 }
 
-
-
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
 
+const splitMe = function(wordToSplit){
+ return wordToSplit.split(" ")
+}
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
+    */
 
+   const deletOne = function(strin,bol){
+    
+     if(bol){
+       return strin.substring(1)
+     }else{
+       return strin.substring(0, strin.length - 1)
+     }
 
-let deleteOne = true
-let sentenceWhoLoseAWord= "Hello,im just a string"
-if(deleteOne){
-  delete.sentenceWhoLoseAWord.length[1] -1
-}
-//I know it dont works 
-*/
+   }
+    
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
@@ -203,6 +214,7 @@ if(deleteOne){
 */
 
 /* This movies array is used throughout the exercises. You're not supposed to alter it. */
+
 const movies = [
   {
     Title: "The Lord of the Rings: The Fellowship of the Ring",
