@@ -29,6 +29,8 @@ let sum = 10 + 20;
 
 let random = Math.floor(Math.random() * 20);
 
+
+
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */

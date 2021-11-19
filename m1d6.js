@@ -103,7 +103,6 @@ const splitMe = function(wordToSplit){
      }else{
        return strin.substring(0, strin.length - 1)
      }
-
    }
     
 
